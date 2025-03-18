@@ -13,7 +13,6 @@ namespace FizzBuzz
             Console.WriteLine("output string: ");
             Console.WriteLine(result.OutputString);
             Console.WriteLine("count: " + result.Count);
-
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
         }
