@@ -85,7 +85,7 @@ public class FizzBuzzDetector
     /// <exception cref="ArgumentException">Thrown when input length is invalid.</exception>
     private void ValidateInput(string input)
     {
-        if (input == null) throw new ArgumentNullException(nameof(input), "Input string cannot be null");
+        if (string.IsNullOrWhiteSpace(input)) throw new ArgumentNullException(nameof(input), "Input string cannot be null");
 
         if (input.Length < 7 || input.Length > 100)
         {
